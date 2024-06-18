@@ -131,7 +131,7 @@ tiledlayout(size(binsetup.N,1),size(binsetup.N,2),'TileSpacing','loose');
 idx_tmp = binsetup.binmatrix(:,3);
 idx_reshape = reshape(idx_tmp,size(binsetup.N,1),size(binsetup.N,2))
 idx_reshape = idx_reshape';
-idx         = reshape(idx_reshape,[],1);
+idx         = reshape(flip(idx_reshape,2),[],1);
 binerpavg   = squeeze(nanmean(binerpavg_all,1));
 for i = 1:25
         
