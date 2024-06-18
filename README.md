@@ -15,4 +15,7 @@ We did cross correlation analysis and generate figure2C based on the grand avera
 We obtained the typical meta-JID and meta-ERP based on the sample JID-ERPs by using starNNMF toolbox and **main_nnmf()**;  
 We obtained the typical meta-JID and averaged meta-ERP given individual variance by **ANLkmeans()**. Before that we ran starnnmf for each participant via **main_nnmf_individual()**.
 
+## visualization
+figure1: ANLJIDERPfigure1.m
+figure2: ANLJIDERPfigure2.m
 
