@@ -66,7 +66,6 @@ loadings_all            = {};
     [best_k_overall]    = choose_best_k(test_err_all, 1);
 
  % perform nnmf multiple times
-    %best_k_overall=2;
     for sub = 1:size(binerpavg_all,1)
     binerpavg = binerpavg_all(sub,:,:)
 %% remove negativity of eeg data
@@ -127,14 +126,4 @@ cd (outdir)
 
 save('nnmf_all.mat','stable_basis_all','stable_loadings_all')
     end
-
-
-%  for sub = 1: size(binerpavg_all,1)
-%     [stable_basis, stable_loading] = stable_nnmf(basis_all(:,sub),loadings_all(:,sub), 1);
-%     stable_basis_all{sub,1}        = stable_basis;
-%     stable_loading_all{sub,1}      = full(stable_loading);
-%     %stable_loading = full(stable_loading);
-%  end
- %% ploting
- % NMFfigure_population(stable_basis,stable_loading,best_k_overall)
 end
