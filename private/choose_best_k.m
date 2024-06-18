@@ -15,6 +15,8 @@ function [all_ks] = choose_best_k(test_err_all, one_pp)
 %   all_ks = optimum number of rank(s)
 %
 % calculate best k per participant
+% author: Kock Ruchella, Leiden University
+
 if ~one_pp
     all_ks = [];
     for pp=1:length(test_err_all)
