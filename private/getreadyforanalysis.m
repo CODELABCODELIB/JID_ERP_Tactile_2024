@@ -35,8 +35,7 @@ end
 
 %filtering
 if ~isempty(bandpassrange)
-INEEG           = pop_eegfiltnew(INEEG, [],bandpassrange(2));
-INEEG           = pop_eegfiltnew(INEEG, bandpassrange(1),[]);
+INEEG           = pop_eegfiltnew(INEEG, bandpassrange(1),bandpassrange(2));
 end
 
 % interpolate
