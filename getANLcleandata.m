@@ -7,11 +7,11 @@ function getANLcleandata(subID,data_path,out_path,bandpassrange,eyeE,epochevent,
 %   -subID: 'aaaaaa**'
 %   -data_path: the path stored the folder of subID datasets
 %   -out_path: the path you want to store the subID result folder
-%   -bandpassrange:like [0.1 45]Hz;
+%   -bandpassrange:like [1 45]Hz;
 %   -eyeE:  eye electrode, {'E5' 'E64'};
-%   -epochevent: {'S 33' 'S 34' 'S 36' 'S 40'}
-%   -epochwindow: [-0.4 0.5]S
-%   -baselinewindow: [-400 -200]ms
+%   -epochevent: {'S 1' 'S 2' 'S 4'}
+%   -epochwindow: [-0.2 0.3]S
+%   -baselinewindow: [-200 -150]ms
 %   -rejepoch: 0=no rejection; 1= reject trials >80 or <-80 uV
 
 % Output(s):
